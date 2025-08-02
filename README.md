@@ -22,9 +22,8 @@ For example:
 > create-vite lwc-react --template react
 
 
-◇  Scaffolding project in D:\vsc-workspace\lwc-react...
-│
-└  Done.
+◇  Scaffolding project in D:\vsc-workspace\lwc-react...│└  Done.
+
 Step 2:
 D:\vsc-workspace> cd .\lwc-react\
 D:\vsc-workspace\lwc-react> npm install
@@ -34,8 +33,7 @@ added 152 packages, and audited 153 packages in 5s
   run `npm fund` for details
 
 found 0 vulnerabilities
-PS D:\vsc-workspace\lwc-react> npm install lightweight-charts-react-components                   
-
+PS D:\vsc-workspace\lwc-react> npm install lightweight-charts-react-components
 added 3 packages, and audited 156 packages in 1s
 
 33 packages are looking for funding
