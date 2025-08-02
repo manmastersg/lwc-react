@@ -164,9 +164,9 @@ const EnhancedReactComponentsChart = () => {
           </div>
         </div>
 
-        <Chart options={chartOptions}>
+        <Chart key={`chart-${showVolume}-${chartType}`} options={chartOptions}>
           {/* Main Price Pane */}
-          <Pane stretchFactor={showVolume ? 3 : 1}>
+          <Pane stretchFactor={3}>
             {renderMainSeries()}
             
             {/* Moving Average Overlay */}
@@ -188,8 +188,9 @@ const EnhancedReactComponentsChart = () => {
 
           {/* Volume Pane */}
           {showVolume && (
-            <Pane stretchFactor={1}>
+            <Pane key="volume-pane" stretchFactor={1}>
               <HistogramSeries 
+                key="volume-series"
                 data={volumeData}
                 options={{
                   base: 0,
@@ -207,24 +208,8 @@ const EnhancedReactComponentsChart = () => {
           <TimeScale />
         </Chart>
 
-        {/* Info Panel */}
-        <div style={{ 
-          marginTop: '20px', 
-          padding: '15px', 
-          backgroundColor: '#f5f5f5', 
-          borderRadius: '5px',
-          fontSize: '14px'
-        }}>
-          <h4 style={{ margin: '0 0 10px 0' }}>✨ React Components Features:</h4>
-          <ul style={{ margin: 0, paddingLeft: '20px' }}>
-            <li>✅ Declarative JSX syntax</li>
-            <li>✅ Automatic lifecycle management</li>
-            <li>✅ Reactive prop updates</li>
-            <li>✅ Multi-pane support with Pane components</li>
-            <li>✅ Type-safe props (IntelliSense in VS Code)</li>
-            <li>✅ Easy composition and conditional rendering</li>
-          </ul>
-        </div>
+        
+        
       </div>
     );
   } catch (error) {
