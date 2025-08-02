@@ -43,6 +43,7 @@ found 0 vulnerabilities
 
 
 Step 3: copy App.jsx and then copy all files in /components/ to src/ folder.
+
 Step 4: D:\vsc-workspace\lwc-react> npm run dev
 > lwc-react@0.0.0 dev
 > vite
