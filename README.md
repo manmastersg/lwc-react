@@ -14,6 +14,7 @@ If you are developing a production application, we recommend using TypeScript wi
 
 Step 1. 
 run Command: npm create vite@latest lwc-react -- --template react
+
 For example:
  D:\vsc-workspace> npm create vite@latest lwc-react -- --template react
 
