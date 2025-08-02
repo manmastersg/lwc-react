@@ -33,7 +33,7 @@ added 152 packages, and audited 153 packages in 5s
   run `npm fund` for details
 
 found 0 vulnerabilities
-PS D:\vsc-workspace\lwc-react> npm install lightweight-charts-react-components
+D:\vsc-workspace\lwc-react> npm install lightweight-charts-react-components
 added 3 packages, and audited 156 packages in 1s
 
 33 packages are looking for funding
@@ -43,9 +43,7 @@ found 0 vulnerabilities
 
 
 Step 3: copy App.jsx and then copy all files in /components/ to src/ folder.
-
 Step 4: D:\vsc-workspace\lwc-react> npm run dev
-
 > lwc-react@0.0.0 dev
 > vite
 
